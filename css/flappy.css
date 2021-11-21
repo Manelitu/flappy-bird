@@ -1,0 +1,68 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+[flappy] {
+    position: relative;
+    border: 0.5rem solid dodgerblue;
+    height: 70rem;
+    width: 120rem;
+    margin: 1.5rem;
+    background: deepskyblue;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 3rem);
+}
+
+.barrier-pairs {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .pipe-border {
+    height: 3rem;
+    width: 13rem;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 0.2rem solid #000;
+}
+
+.barrier .pipe-body {
+    height: 15rem;
+    width: 11rem;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 0.2rem solid #000;
+    border-right: 0.2rem solid #000;
+}
+
+.progress {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'Pixel';
+    font-size: 8rem;
+    z-index: 2;
+
+}
